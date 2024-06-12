@@ -1,0 +1,124 @@
+.container {
+    margin: 0 8rem;
+    background-size: cover;
+}
+
+.trailer__btns {
+    padding: 2rem 2rem 0;
+    display: flex;
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.trailer__btns h2 {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0;
+    color: white;
+}
+
+.btns {
+    border-radius: 30px;
+    border: 1px solid #00f7ff;
+    display: flex;
+    position: relative;
+    height: 23px;
+    overflow: hidden;
+}
+
+.btns button {
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+    z-index: 999;
+    width: 100px;
+    transition: all 0.3s ease;
+}
+
+.bgDiv {
+    background-color: #00f7ff;
+    position: absolute;
+    height: 100%;
+    width: 100px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.trailers__movie {
+    padding: 1.5rem 0 1rem 2rem;
+    gap: 1rem;
+    display: grid;
+    grid-auto-flow: column;
+    overflow-y: hidden;
+}
+
+.card {
+    width: 320px;
+}
+
+.card__img {
+    position: relative;
+}
+
+.card__img img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.elipsis {
+    position: absolute;
+    top: -150px;
+    right: 13px;
+    padding: 1px 4px;
+    background-color: rgba(225, 222, 222, 0.6);
+    border-radius: 50%;
+}
+
+.elipsis:hover {
+    background-color: #00f7ff;
+}
+
+.elipsis i {
+    color: white;
+}
+
+.trailers__movie::-webkit-scrollbar {
+    height: 8px;
+}
+
+.trailers__movie::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.trailers__movie::-webkit-scrollbar-thumb {
+    background: #b3b2b2;
+    border-radius: 10px;
+}
+
+.card__title {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.card__title h3,
+p {
+    margin: 0;
+}
+
+.play {
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translate(-50%);
+    border: transparent;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.play i {
+    width: 100%;
+    font-size: 50px;
+}

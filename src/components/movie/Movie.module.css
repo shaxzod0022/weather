@@ -1,0 +1,94 @@
+.content {
+    padding: 2.5rem 8rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    gap: 2rem;
+}
+
+.img {
+    height: 400px;
+}
+
+.img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.titles {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.titles h2 {
+    margin: 0;
+}
+
+.average {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.average button {
+    border: transparent;
+    cursor: pointer;
+}
+
+.average button:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.average button:first-child {
+    width: 40px;
+    height: 40px;
+    background-color: #032541;
+    color: white;
+    border-radius: 50%;
+}
+
+.average button:last-child {
+    background-color: #032541;
+    border-radius: 12px;
+    color: white;
+    padding: 8px 12px;
+}
+
+.likes__buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.likes__buttons button {
+    border: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.like,
+.clipboard,
+.bar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #032541;
+}
+
+.play{
+    background: transparent;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.titles p, .titles h4{
+    margin: 0;
+}

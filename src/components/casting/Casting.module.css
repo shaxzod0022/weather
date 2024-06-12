@@ -1,0 +1,46 @@
+.container{
+    padding: 1rem 8rem;
+}
+
+
+.box{
+    display: grid;
+    grid-auto-flow: column;
+    overflow-y: hidden;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.box::-webkit-scrollbar {
+    height: 8px;
+}
+
+.box::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.box::-webkit-scrollbar-thumb {
+    background: #b3b2b2;
+    border-radius: 10px;
+}
+
+.box__item{
+    width: 140px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 15px;
+}
+
+.img img{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+
+.title{
+    padding: 13px;
+}
+
+.title h3{
+    margin: 0;
+}
