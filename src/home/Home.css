@@ -1,0 +1,389 @@
+.container {
+    width: 100%;
+    max-width: 1536px;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+}
+
+.menyu {
+    width: 25%;
+    background-color: #040272;
+    color: white;
+    border-top-right-radius: 190px;
+    padding: 1.5rem;
+}
+
+.menyu h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+.nav {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.nav li button {
+    background: transparent;
+    border: transparent;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav li button:hover {
+    color: blueviolet;
+}
+
+.weather__info {
+    width: 40%;
+}
+
+.weather__info h2 {
+    margin: 0;
+}
+
+.weather__main {
+    border: 4px dashed #040272;
+    border-radius: 20px;
+    padding: 1rem;
+    position: relative;
+    color: white;
+    background-color: #302de4;
+}
+
+.weather__main img {
+    position: absolute;
+    width: 150px;
+    top: -60px;
+    right: -60px;
+}
+
+.weather__main h4 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.weather__main p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.weather__main div {
+    text-align: center;
+}
+
+.weather__main strong {
+    font-size: 80px;
+    text-align: center;
+}
+
+.weather__main strong sup {
+    font-size: 50px;
+}
+
+.details {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.box {
+    padding: 0 1rem;
+    height: 270px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    overflow-y: scroll;
+}
+
+.box::-webkit-scrollbar {
+    width: 10px;
+}
+
+.box::-webkit-scrollbar-track {
+    border-radius: 12px;
+    background-color: #dbd8d8;
+}
+
+.box::-webkit-scrollbar-thumb {
+    background: #7e7ce0;
+    border-radius: 12px;
+    margin: 10px;
+}
+
+.box__item {
+    position: relative;
+    width: 40%;
+    height: 85px;
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: #7e7ce0;
+}
+
+.box__item h3 {
+    position: absolute;
+    margin: 0;
+}
+
+.box__item strong {
+    font-size: 30px;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.date {
+    text-align: center;
+    width: 25%;
+    padding: 2rem;
+    background-color: #1d19d2;
+    border-top-left-radius: 190px;
+    color: white;
+}
+
+.date__box {
+    display: flex;
+    justify-content: center;
+}
+
+.date h2 {
+    font-size: 40px;
+    margin: 0;
+}
+
+table {
+    width: 80%;
+    border: 3px dashed #040272;
+    border-radius: 15px;
+    padding: 1rem;
+    background-color: #7e7ce0;
+}
+
+th {
+    border-bottom: 2px solid #040272;
+    font-size: 25px;
+}
+
+td {
+    font-size: 20px;
+}
+
+.modal__menyu {
+    background-color: #040272;
+    padding: 1rem;
+    border-radius: 12px;
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    transition: all 0.4s ease;
+    z-index: 999;
+    overflow-y: scroll;
+    height: 300px;
+}
+
+.modal__menyu::-webkit-scrollbar {
+    width: 6px;
+}
+
+.modal__menyu::-webkit-scrollbar-track {
+    border-radius: 12px;
+}
+
+.modal__menyu::-webkit-scrollbar-thumb {
+    background: #1d19d2;
+    border-radius: 12px;
+}
+
+.modal__btn {
+    padding: 1rem;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.modal__btn h1 {
+    margin: 0;
+}
+
+.modal__btn button {
+    cursor: pointer;
+    font-size: 20px;
+    background: transparent;
+    border: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1d19d2;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #7e7ce0;
+    border-radius: 12px;
+}
+
+@media (min-width: 576px) {
+    .container {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        overflow: hidden;
+
+    }
+
+    .modal__btn,
+    .modal__menyu {
+        display: flex;
+    }
+
+    .menyu {
+        display: none;
+    }
+
+    .weather__info {
+        width: 100%;
+
+    }
+
+    .box__item {
+        width: 40%;
+    }
+
+    .date {
+        width: 100%;
+        padding: 0 0 1rem;
+        border-radius: 12px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .modal__btn,
+    .modal__menyu {
+        display: flex;
+    }
+
+    .container {
+        margin: 0;
+        display: flex;
+        padding: 20px;
+        flex-direction: initial;
+        overflow: hidden;
+
+    }
+
+    .menyu {
+        display: none;
+    }
+
+    .box__item {
+        width: 100%;
+    }
+
+    .date {
+        padding: 0 0 1rem;
+        border-radius: 12px;
+    }
+}
+
+@media (min-width: 992px) {
+    .box__item {
+        width: 33%;
+    }
+
+    .modal__btn,
+    .modal__menyu {
+        display: none;
+    }
+
+    .container {
+        margin: 0;
+        display: flex;
+        padding: 0;
+        flex-direction: initial;
+        overflow: hidden;
+    }
+
+    .menyu {
+        display: inline;
+        width: 30%;
+    }
+
+    .date {
+        text-align: center;
+        width: 25%;
+        padding: 2rem;
+        background-color: #1d19d2;
+        border-radius: 190px 0 0 0;
+        color: white;
+    }
+
+    .weather__info {
+        width: 50%;
+    }
+
+    .weather__info h2 {
+        margin: 1rem 0 12px 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .box {
+        padding: 0 12px;
+    }
+
+    .box__item {
+        width: 38%;
+    }
+
+    .modal__btn,
+    .modal__menyu {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 12px;
+        overflow: hidden;
+    }
+
+    .modal__btn,
+    .modal__menyu {
+        display: flex;
+    }
+
+    .menyu {
+        display: none;
+    }
+
+    .weather__info {
+        width: 100%;
+
+    }
+
+    .box__item {
+        width: 100%;
+    }
+
+    .date {
+        width: 100%;
+        padding: 0 0 1rem;
+        border-radius: 12px;
+    }
+}
